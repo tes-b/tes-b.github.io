@@ -1,6 +1,7 @@
 ---
 
 title:  "VSCode로 블로그 포스팅하기."
+categories: guitar
 ---
 #  
 
