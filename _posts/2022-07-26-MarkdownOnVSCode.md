@@ -1,8 +1,13 @@
 ---
 title:  "VSCode로 블로그 포스팅하기."
 categories: guitar
-tag: [VSCode, typora]
 toc: true
+toc_sticky: true
+author_profile: true
+sidebar:
+    nav: "docs"
+search: true
+tag: [VSCode, typora]
 ---
 
 ## 깃허브 블로그 시작
