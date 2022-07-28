@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Suspicious Lab"
+title                    : "Yogurt Office"
 title_separator          : "|"
-subtitle                 : "수상한 실험실" # site tagline that appears below site title in masthead
-name                     : "tes-b"
-description              : "So suspicious..."
+subtitle                 : "요거트 사무소" # site tagline that appears below site title in masthead
+name                     : "geek yogurt"
+description              : "So plain..."
 url                      : "https://tes-b.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "Suspicious-Lab" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "yogurt-office" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "tes-b"
+  name             : "geek yogurt"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "So suspicious..."
+  bio              : "not greek yogurt"
   location         : "Somewhere"
   email            : "tsyi0313@gmail.com"
   links:

@@ -1,9 +1,11 @@
 ---
-
 title:  "VSCode로 블로그 포스팅하기."
 categories: guitar
+tag: [VSCode, typora]
+toc: true
 ---
-#  
+
+## 깃허브 블로그 시작
 
 깃허브 블로그를 처음 시작했다. 글을 작성하려면 마크다운(Markdown) 언어를 이용해야 한단다. 문법을 알아보니 정말 간단하고 텍스트 에디터만 있으면 쉽게 작성 할 수 있어서 많이 사용한다고 한다.  
 
@@ -12,7 +14,7 @@ categories: guitar
 
 
 
-##### typora. A Truly Miniaml Markdown. 하지만 진정한 미니멀은 아예 설치하지 않는 것!
+###### typora. A Truly Miniaml Markdown. 하지만 진정한 미니멀은 아예 설치하지 않는 것!
 ![typora_logo](/images/Typora.png)
 
 
@@ -24,5 +26,5 @@ categories: guitar
 그래서 그냥 VSCode로 작성하기로 결정했다. VSCode 역시 마크다운 미리보기를 지원하고 터미널도 바로 사용할 수 있으니 편리할 것!   
 
 
-##### *VSCode에서도 미리보기가 잘 된다.*
+###### *VSCode에서도 미리보기가 잘 된다.*
 ![screenshot](/images/MarkdownOnVSCode.PNG)
