@@ -4,7 +4,7 @@ main:
     url: /categories/
   # - title: "Tag"
   #   url: /tags/
-  - title: "Search"
+  - title: "search"
     url: /search/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
