@@ -44,7 +44,7 @@ tag: [github, markdown, header]
 그렇게 구글을 헤엄친지 몇시간...  
 <br>  
 
-안되는 헤더 문제는 무시하기로 했다. :sweat_smile:  
+안되는 헤더 문제는 무시하기로 했다. 😅  
 
 왜냐면 이미지에 주석을 다는 방법을 찾았기 때문!  
 
@@ -83,7 +83,7 @@ img + em {
 이렇게 코드를 css 파일에 넣어주면 되는 것!  
 <br>
 이 작업을 하려 _base.scss 파일에 들어간 나는  
-발견하고 말았다...:fearful:  
+발견하고 말았다...😲  
 
  ![caption_5](/images/HeaderIssue_5.PNG)*폰트 크기 정의*
 <br>  
