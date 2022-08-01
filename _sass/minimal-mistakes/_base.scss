@@ -128,6 +128,9 @@ blockquote {
 /* links */
 
 a {
+
+  text-decoration: none; // 22.08.01 GY // Remove hyperlink underline
+  
   &:focus {
     @extend %tab-focus;
   }

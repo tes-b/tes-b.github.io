@@ -286,7 +286,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false #//true 22.08.01 GY
       comments: true
       share: true
       related: true
