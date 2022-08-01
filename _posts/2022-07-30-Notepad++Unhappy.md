@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "notepad++ 환불받는 꿀팁!"
-categories: guitar
+categories: Etc
 toc: true
 toc_sticky: true
 author_profile: true

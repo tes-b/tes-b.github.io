@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "마크다운 헤더 미적용 문제"
-categories: guitar
+categories: Diary
 toc: true
 toc_sticky: true
 author_profile: true
