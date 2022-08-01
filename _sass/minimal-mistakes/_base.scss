@@ -110,9 +110,11 @@ blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
-  font-style: italic;
+  font-style: normal; //italic;
   border-left: 0.25em solid $primary-color;
-
+  // Add Background Colour - 22.08.01 GY
+  background-color: mix(rgb(0, 0, 0), $link-color, 75%);
+  
   cite {
     font-style: italic;
 
