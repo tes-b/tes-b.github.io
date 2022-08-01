@@ -2,12 +2,6 @@
 published: true
 title:  "마크다운 헤더 미적용 문제"
 categories: Diary
-toc: true
-toc_sticky: true
-author_profile: true
-sidebar:
-    nav: "docs"
-search: true
 tag: [github, markdown, header]
 ---
 
@@ -25,6 +19,7 @@ tag: [github, markdown, header]
 
 
 <br>
+
 그래서 테스트를 해봤다.
 <br><br>
 
@@ -38,9 +33,11 @@ tag: [github, markdown, header]
 # 구글링...구글링...
 
 그래서 구글링을 해봤지만 어디서도 답을 찾을 수 없었다.  
-스텍오버플로에 비슷하게 헤더가 표시되지 않는 문제를 겪는 사람들은 있었지만 나와 완전히 같은 이슈가 있다는 글은 없었다.   
+스텍오버플로에 비슷하게 헤더가 표시되지 않는 문제를 겪는  
+사람들은 있었지만 나와 완전히 같은 이슈가 있다는 글은 없었다.   
 
-<br>
+<br>  
+
 그렇게 구글을 헤엄친지 몇시간...  
 <br>  
 
@@ -96,7 +93,8 @@ img + em {
 폰트 크기를 차이가 나게 조정하고  
 ![caption_6](/images/HeaderIssue_6.PNG)  
 
-<br>
+<br>  
+
 다시 테스트를 해보니  
 
 ![caption_7](/images/HeaderIssue_7.PNG)*차이가 느껴진다!!*

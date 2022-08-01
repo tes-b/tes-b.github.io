@@ -2,12 +2,6 @@
 published: true
 title:  "VSCode로 블로그 포스팅하기."
 categories: Etc
-toc: true
-toc_sticky: true
-author_profile: true
-sidebar:
-    nav: "docs"
-search: true
 tag: [VSCode, typora]
 ---
 

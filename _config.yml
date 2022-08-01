@@ -286,8 +286,16 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false #//true 22.08.01 GY
+      read_time: false # 22.08.01 GY - hide read_time
       comments: true
       share: true
       related: true
       show_date: true
+      # 22.08.01 GY - add some default settings >> 
+      published: true
+      toc: true
+      toc_sticky: true
+      sidebar:
+          nav: "docs"
+      search: true
+      # << GY
