@@ -96,8 +96,8 @@ print(type(df));
 행4   5  50
 <class 'pandas.core.frame.DataFrame'>
 ```
-```py
 파이썬에서 자료들을 대괄호로 묶는 것은 리스트 형식이 된다.  
+```py
 data = ['A','B'];
 print(type(data)); # <class 'list'>
 
