@@ -16,10 +16,20 @@ main:
   #   url: /sitemap/
 
 docs:
-  - title: "Category"
-    url: /categories/
-    # children:
-    #   - title: "Category"
-    #     url: /categories/
-    #   - title: "Tag"
-    #     url: /tags/
+  - title: ""
+    url: 
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
+# docs:
+#   - title: Category
+#     children:
+#       - title: "SQL"
+#         url: /docs/sql/
+#       - title: "Diary"
+#         url: /docs/diary/
+#       - title: "Etc"
+#         url: /docs/etc/
