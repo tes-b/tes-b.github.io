@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "VSCode 주피터노트북(Jupyter Notebook) 키 바인딩 - Run All,Run Above"
-categories: DATA
+categories: Etc
 tag: [VSCdoe, jupyter notebook, keybinding]
 ---
 

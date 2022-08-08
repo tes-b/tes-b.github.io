@@ -1,8 +1,8 @@
 ---
 published: true
 title:  "[Pandas] 파이썬 판다스 원하는 행/열 가져오기 총정리"
-categories: DATA
-tag: [Data, pandas, numpy, python, loc, iloc]
+categories: Pandas
+tag: [data, pandas, numpy, python, loc, iloc]
 ---
 <br>  
   

@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "정규표현식에서 '+' 사용 예시"
-categories: DATA
+categories: Etc
 tag: [Data, pandas, numpy, python, '정규표현식']
 ---
 
