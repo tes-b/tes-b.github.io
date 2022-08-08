@@ -111,6 +111,7 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: normal; //italic;
+  color: $background-color; // Add 22.08.08 GY
   border-left: 0.25em solid $primary-color;
   // Add Background Colour - 22.08.01 GY
   background-color: mix(rgb(0, 0, 0), $link-color, 75%);
@@ -130,7 +131,7 @@ blockquote {
 a {
 
   text-decoration: none; // 22.08.01 GY // Remove hyperlink underline
-  
+  color: mix($primary-color ,$background-color, 20%); // 22.08.08 GY // Add
   &:focus {
     @extend %tab-focus;
   }
