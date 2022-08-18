@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title:  "정형 데이터의 종류"
 categories: Data
 tag: [data, statistics, 통계]
