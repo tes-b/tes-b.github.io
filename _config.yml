@@ -191,7 +191,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
 # Conversion
-markdown: GFM #kramdown
+markdown: kramdown #GFM 
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
@@ -297,5 +297,5 @@ defaults:
       toc_sticky: true
       sidebar:
           nav: "docs"
-      search: true
-      # << GY
+      search: true # <<
+      use_math: true # 22.08.21 GY for mathjax
