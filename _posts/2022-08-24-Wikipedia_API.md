@@ -69,6 +69,7 @@ import wikipediaapi
     # https://en.wikipedia.org/wiki/Python_(programming_language)
 ```
 ## 전체 페이지 가져오기
+
 ```py
 wiki_wiki = wikipediaapi.Wikipedia(
         language='en',
@@ -83,6 +84,9 @@ print(p_wiki.text);
 # Text of section 1.1
 # ...
 ```
+```extract_format```을 ```wikipediaapi.ExtractFormat.HTML```로 지정시  
+HTML 포멧으로도 가져올 수 있다.
+
 ## 섹션 가져오기
 
 가져온 페이지에서 섹션별로 가져온다.
