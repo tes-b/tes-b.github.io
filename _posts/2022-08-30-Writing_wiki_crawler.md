@@ -1,6 +1,6 @@
 ---
 published: true
-title:  "[Python] Wikipedia API로 크롤러 모듈 제작하기"
+title:  "[python] Wikipedia API로 크롤러 모듈 제작하기"
 categories: python
 tag: [wikipedia, crawling, scraping, data]
 ---
