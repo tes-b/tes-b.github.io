@@ -1,6 +1,6 @@
 ---
-published: false
-title:  "Github Cli 사용하기 (fork, pull request)"
+published: true
+title:  "Github Cli 사용하기 (pull request)"
 categories: etc
 tag: [GitHub, GitHub CLI, fork, pull request]
 ---
@@ -32,8 +32,9 @@ https://cli.github.com/ 에서 설치 할 수 있다.
 코드를 넣으면 인증이 완료된다.  
 ![image4](/images/2022-10-15-Github_CLI_4.png)  
 
-## pull request test
-> gh pr create 명령어로 pull request 할 수 있다.
+## 사용하기
+명령어를 사용해 pull request를 해보자
+> gh pr create
 
 아래 스샷은 윈도우에서 gh cli로 pull request를 해본 모습이다.  
 ![image5](/images/2022-10-15-Github_CLI_5.png)  
