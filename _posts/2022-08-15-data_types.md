@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "정형 데이터의 종류"
-categories: Data
+categories: DataScience
 tag: [data, statistics, 통계]
 ---
 

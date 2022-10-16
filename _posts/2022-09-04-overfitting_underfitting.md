@@ -1,8 +1,8 @@
 ---
 published: true
 title:  "과적합(Overfitting)과 과소적합(Underfitting)"
-categories: Data
-tag: [data, data science, overfitting, underfitting]
+categories: ML
+tag: [data, data science,ML, overfitting, underfitting]
 ---
 
 테스트 데이터에서 만들어내는 오차를 일반화 오차라고 한다.  
