@@ -8,38 +8,44 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-    <!-- 22.08.21 GY for mathjax-->
-    {% if page.use_math %} 
-	  {% include mathjax_support.html %}
-{% endif %}
-  </head>
+<html lang="{{ site.locale | slice: 0,2 | default: " en" }}" class="no-js">
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+  <!-- 22.08.21 GY for mathjax-->
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
+  <!-- 22.10.16 GY add Google AdSense-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8593183969129033"
+    crossorigin="anonymous"></script>
+</head>
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
+<body
+  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include_cached masthead.html %}
 
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
+  <div class="initial-content">
+    {{ content }}
+  </div>
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
+  {% if site.search == true %}
+  <div class="search-content">
+    {% include_cached search/search_form.html %}
+  </div>
+  {% endif %}
 
-    {% include scripts.html %}
+  <div id="footer" class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include_cached footer.html %}
+    </footer>
+  </div>
 
-  </body>
+  {% include scripts.html %}
+
+</body>
+
 </html>
