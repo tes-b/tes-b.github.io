@@ -1,9 +1,13 @@
 ---
 published: true
-title:  "[ubuntu] 우분투 20.04 텐서플로 GPU 설치하기"
+title:  "[ubuntu] 우분투 20.04 텐서플로우 GPU 설치하기"
 categories: ubuntu
 tag: [ubuntu, tensorflow, cuda, cuDNN]
 ---
+
+이글은 오래된 버전의 텐서플로를 설치하는  
+방법이라 참고만 하는 것이 좋다.  
+최신 버전의 설치방법을 나중에 다시 포스팅 할 예정이다.
 
 ## 드라이버 초기화
 
@@ -14,7 +18,7 @@ tag: [ubuntu, tensorflow, cuda, cuDNN]
 엔비디아와 쿠다를 삭제하는 명령어  
 
 > sudo apt-get remove --purge '^nvidia-.*'   
-sudo apt-get autoremove --purge 'cuda*'
+sudo apt-get autoremove --purge 'cuda\*'
 
 ## cuda toolkit 설치
 
