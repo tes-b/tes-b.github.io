@@ -1,6 +1,6 @@
 ---
 published: true
-title:  "[ubuntu] 우분투 키 입려 지연시간 설정"
+title:  "[ubuntu] 우분투 키 입력 지연시간 설정"
 categories: ubuntu
 tag: [ubuntu]
 ---
