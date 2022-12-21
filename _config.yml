@@ -295,6 +295,7 @@ defaults:
       published: true
       toc: true
       toc_sticky: true
+      toc_ads: true # 22.12.21 GY - add adsense sidebar
       sidebar:
           nav: "docs"
       search: true # <<
