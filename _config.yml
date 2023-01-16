@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "geek yogurt"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/profile_gromit.png"
   bio              : "not greek yogurt"
   location         : "Somewhere"
   email            : "tsyi0313@gmail.com"
