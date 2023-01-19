@@ -40,11 +40,11 @@ mysqldump -uid -p1234 database_name table_name > /root/backup/data.sql
 
 - 전체 스키마
 ```
-mysqldump -u[아이디] -p[패스워드] [데이터베이스명] < [불러올 경로와 파일명].sql
+mysql -u[아이디] -p[패스워드] [데이터베이스명] < [불러올 경로와 파일명].sql
 ```
 - 특정 테이블
 ```
-mysqldump -u[아이디] -p[패스워드] [데이터베이스명]=[테이블명] < [저장할 경로와 파일명].sql
+mysql -u[아이디] -p[패스워드] [데이터베이스명]=[테이블명] < [저장할 경로와 파일명].sql
 ```
 
 예시)  
