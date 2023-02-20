@@ -27,11 +27,21 @@ vworld라는 곳에서 api로 원하는 행정구역의 경계 데이터를 얻�
 API 사용법이 나오는데 대략 이런식이다.
 
 파라미터로  
-key : 발급받은 API 키값
-domain : 서비스되는 사이트의 주소
+key : 발급받은 API 키값  
+domain : 서비스되는 사이트의 주소  
 attrFilter : 원하는 방식의 행정구역 양식  
-행정동코드를 사용해도 되고 검색방식을 사용해도 된다.
+행정동코드를 사용해도 되고 검색방식을 사용해도 된다.  
 나의 경우는 행정동 코드를 사용했다.
+
+포스트맨으로 해당 api에 요청해보았다.  
+결과값에서 coordinates 항목이 경계를 그릴 수 있는 좌표 목록이다.  
+![Image0](/images/2022-11-23-NUMA_0.png)  
+
+
+## 파이썬으로 데이터 가져오기
+
+requests.get을 사용해 요청을 보내면 json 형식으로 데이터가 온다.  
+결과값에서 coordinates 항목을 가져와서 js쪽으로 넘겨주면 된다.    
 
 
 ```python
@@ -40,70 +50,45 @@ geocode = res_code["code"]
 key = dbid.get_vworld_key()
 url_geo = f"http://api.vworld.kr/req/data?service=data&request=GetFeature&data=LT_C_ADEMD_INFO&key={key}&domain={service_url}&attrFilter=emdCd:=:{geocode}"
 
-with requests.get(url_geo) as page:
+with requests.get(url_geo) as page: # 페이지 가져오기
     try:
         page.raise_for_status()
-    except requests.exceptions.HTTPError as Err:
+    except requests.exceptions.HTTPError as Err: # 에러처리
         print(Err)
     else:
-        res_geo = json.loads(page.content)
-        if res_geo["response"]["status"] != "OK":
+        res_geo = json.loads(page.content) # 제이슨으로 변환
+        if res_geo["response"]["status"] != "OK": # 스테이터스 OK 인지 확인
             print(res_geo["response"])
-        coord = res_geo["response"]["result"]["featureCollection"]["features"][0]["geometry"]["coordinates"][0][0]
-        # print(coord)
+        coord = res_geo["response"]["result"]["featureCollection"]["features"][0]["geometry"]["coordinates"][0][0] # 경계좌표목록 : js쪽으로 넘겨준다.
+        
 ```
 
-requests.get을 사용해 요청을 보내면 json 형식으로 데이터가 온다.  
-결과값에서 coordinates 항목이 경계를 그릴 수 있는 좌표 목록이다.  
+원하는 곳의 지도를 생성하고  
+polyline으로 경계를 그려주면 된다.  
 
-이 항목을 polyline으로 그려주면 된다.  
-
-```python
+```js
 // 지도 생성
 var mapOptions = {
-    center: new naver.maps.LatLng(35.2056295, 129.078463),
+    center: new naver.maps.LatLng(35.2056295, 129.078463), // 지도 중심
     mapTypeId: 'normal',
     scaleControl: true,
-    logoControl: false,
+    logoControl: false, 
     mapDataControl: true,
-    minZoom: 7,
-    maxZoom: 15,
-    zoomControl: true, // 줌
+    minZoom: 7, // 최소 줌
+    maxZoom: 15, // 최대 줌
+    zoomControl: true, // 줌 컨트롤러
     zoomControlOptions: {
-        style: naver.maps.ZoomControlStyle.LARGE,
-        position: naver.maps.Position.TOP_RIGHT
+        style: naver.maps.ZoomControlStyle.LARGE, // 줌 컨트롤 크기
+        position: naver.maps.Position.TOP_RIGHT // 줌 컨트롤 위치
     }
 };
 
+// 맵 생성
 var map = new naver.maps.Map(document.getElementById('map'), mapOptions);
 
 searchAddressToCoordinate("{{kw}}")
 
-var contentEl = $('<div class="iw_inner" style="overflow:auto;width:50%;height:100%;position:absolute;top:0;left:0;z-index:1000;background-color:#fff;border:solid 1px #333;">'
-        // + '<h3>{{kw}}</h3>'
-        // + '<p style="font-size:20px;">zoom : <em class="zoom">'+ map.getZoom() +'</em></p>'
-        // + '<p style="font-size:20px;">centerPoint : <em class="center">'+ map.getCenterPoint() +'</em></p>'
-        + '<p align="center" style="font-size:40px;"> 총 점포수 : ' + '{{res_total["total"]}}' +'</p>'
-        + '<iframe src="../static/charts/pie_cat_ratio.html" width="55%" height="400" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe>'
-        + '<iframe src="../static/charts/table_cat_cnt.html" width="45%" height="400" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe>'
-        + '<iframe src="../static/charts/pie_household.html" width="55%" height="400" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe>'
-        + '<iframe src="../static/charts/table_senior.html" width="45%" height="400" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe>'
-        + '<iframe src="../static/charts/table_area.html" width="50%" align="center" height="400" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe>'
-        + '</div>');
-
-    contentEl.appendTo(map.getElement());
-
-    // naver.maps.Event.addListener(map, 'zoom_changed', function(zoom) {
-    //     contentEl.find('.zoom').text(zoom);
-    // });
-
-    // naver.maps.Event.addListener(map, 'bounds_changed', function(bounds) {
-    //     contentEl.find('.center').text(map.getCenterPoint());
-    //     console.log('Center: ' + map.getCenter().toString() + ', Bounds: ' + bounds.toString());
-    // });
-
-
-//검색한 주소의 정보를 insertAddress 함수로 넘겨준다.
+// 검색한 주소의 정보를 insertAddress 함수로 넘겨준다.
 function searchAddressToCoordinate(address) {
     naver.maps.Service.geocode({
         query: address
