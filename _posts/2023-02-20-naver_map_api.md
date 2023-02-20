@@ -10,21 +10,30 @@ tag: [naver-map-api, 네이버지도]
 네이버 지도를 사용하는 방법을 사용하는 방법은  
 문서도 잘 나와있고 블로그 글도 많기에 생략한다.  
 
+## 행정구역 경계 데이터 받기
 
 먼저 행정구역 경계 데이터가 필요한데  
 vworld라는 곳에서 api로 원하는 행정구역의 경계 데이터를 얻을 수 있다.
 
 [VWORLD 공간정보 플랫폼]<https://www.vworld.kr/v4po_main.do> 
 
-링크로 들어가서 회원가입을 하고 로그인한다.
-![Image0](/images/2022-11-23-NUMA_0.png)
+링크로 들어가서 회원가입을 하고 로그인한다.  
+오픈 API로 들어간다.  
+![Image0](/images/2023-02-20-naver_map_api_0.png)  
 
-인증키를 먼저 발급받는다.
+인증키를 먼저 발급받는다.  
+![Image1](/images/2023-02-20-naver_map_api_1.png)  
+나머지는 서비스에 맞게 채워주고  
+활용 API는 '2D 데이터 API'를 체크하면된다.  
+![Image2](/images/2023-02-20-naver_map_api_2.png)   
 
 2D 데이터 항목에서 동읍면을 검색하면 API가 나온다.  
 다른 단위의 행정구역이 필요하면 필요에 맞게 검색하면 된다.  
+![Image3](/images/2023-02-20-naver_map_api_3.png) 
 
-API 사용법이 나오는데 대략 이런식이다.
+API 사용법이 나온다.
+
+api 주소 : ```ttp://api.vworld.kr/req/data?service=data&request=GetFeature&data=LT_C_ADEMD_INFO```  
 
 파라미터로  
 key : 발급받은 API 키값  
@@ -69,72 +78,30 @@ polyline으로 경계를 그려주면 된다.
 ```js
 // 지도 생성
 var mapOptions = {
-    center: new naver.maps.LatLng(35.2056295, 129.078463), // 지도 중심
+    center: new naver.maps.LatLng(37.5521212, 126.9875401), // 지도 중앙 좌표
     mapTypeId: 'normal',
     scaleControl: true,
-    logoControl: false, 
+    logoControl: false,
     mapDataControl: true,
-    minZoom: 7, // 최소 줌
-    maxZoom: 15, // 최대 줌
-    zoomControl: true, // 줌 컨트롤러
+    minZoom: 6, // 최소 줌
+    zoom:14,
+    zoomControl: true, // 줌 컨트롤 패널 보이기
     zoomControlOptions: {
-        style: naver.maps.ZoomControlStyle.LARGE, // 줌 컨트롤 크기
-        position: naver.maps.Position.TOP_RIGHT // 줌 컨트롤 위치
+        style: naver.maps.ZoomControlStyle.LARGE, // 줌 컨트롤 패널 크기
+        position: naver.maps.Position.TOP_RIGHT // 줌 컨트롤 패널 위치
     }
 };
 
-// 맵 생성
 var map = new naver.maps.Map(document.getElementById('map'), mapOptions);
 
-searchAddressToCoordinate("{{kw}}")
-
-// 검색한 주소의 정보를 insertAddress 함수로 넘겨준다.
-function searchAddressToCoordinate(address) {
-    naver.maps.Service.geocode({
-        query: address
-    }, function(status, response) {
-        if (status === naver.maps.Service.Status.ERROR) {
-            return alert('Something Wrong!');
-        }
-        if (response.v2.meta.totalCount === 0) {
-            return alert('올바른 주소를 입력해주세요.');
-        }
-        var htmlAddresses = [],
-            item = response.v2.addresses[0],
-            point = new naver.maps.Point(item.x, item.y);
-        if (item.roadAddress) {
-            htmlAddresses.push('[도로명 주소] ' + item.roadAddress);
-        }
-        if (item.jibunAddress) {
-            htmlAddresses.push('[지번 주소] ' + item.jibunAddress);
-        }
-        if (item.englishAddress) {
-            htmlAddresses.push('[영문명 주소] ' + item.englishAddress);
-        }
-
-        // 지도 이동
-        var latitude = item.x
-        var longitude = item.y
-        var offset = 0.035
-        map.morph(new naver.maps.LatLng(longitude, latitude-offset),14)
-        
-        // 마커 생성
-        var marker = new naver.maps.Marker({
-            map: map,
-            position: new naver.maps.LatLng(longitude, latitude),
-        });
-
-        // 경계선 생성
-        var polyline = new naver.maps.Polyline({
-            path: {{coord}},
-            strokeColor: '#0000FF',
-            strokeOpacity: 0.8,
-            strokeWeight: 6,
-            zIndex: 2,
-            clickable: true,
-            map: map
-        });
-
-    });
-}
+// 경계선 생성
+var polyline = new naver.maps.Polyline({
+    path: {{coord}}, // 여기에 받아온 경계 좌표를 넣어준다.
+    strokeColor: '#0000FF', // 선 색
+    strokeOpacity: 0.8, // 투명도
+    strokeWeight: 6,
+    zIndex: 2,
+    clickable: true,
+    map: map // 위에서 생성한 지도에 띄운다
+});
 ```
