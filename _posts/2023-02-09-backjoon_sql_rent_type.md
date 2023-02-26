@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Programmers, MySQL, Lv.1] 자동차 대여 기록에서 장기/단기 대여 구분하기. 왜 30이 아닌 29?"
-categories: Coding Tests
+categories: CodingTests
 tag: [Programmers, MySQL, Database, SQL]
 ---
 
