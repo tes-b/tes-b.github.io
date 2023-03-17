@@ -1,12 +1,10 @@
 ---
 published: True
-title:  "[Programmers, MySQL, Lv.3] 조건에 맞는 사용자와 총 거래금액 조회하기"
+title:  "[Programmers, MySQL, Lv.3] 조건에 맞는 사용자 정보 조회하기"
 categories: CodingTests
 tag: [Programmers, MySQL, Database, SQL]
 ---
 
-이 문제는 제목이 좀 이상한데 총 거래금액 조회라고 하면서 거래금액은 전혀 조회하지 않는다.  
-아무튼 문제의 요구조건을 충족하면 된다.  
 
 ## 문제
 
