@@ -1,6 +1,6 @@
 ---
 published: true
-title:  "[JS] 논리연산자(&&, ||) 단축평가"
+title:  "[JS] 논리연산자(&&) 단축평가"
 categories: JS
 tag: [JS]
 ---
