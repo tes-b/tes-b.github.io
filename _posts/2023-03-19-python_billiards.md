@@ -1,6 +1,6 @@
 ---
 published: True
-title:  "[Programmers, Python3, Lv.1] 당구 연습"
+title:  "[Programmers, Python3, Lv.2] 당구 연습"
 categories: CodingTests
 tag: [Programmers, Python3, Database]
 ---
