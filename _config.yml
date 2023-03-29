@@ -300,3 +300,5 @@ defaults:
           nav: "docs"
       search: true # <<
       use_math: true # 22.08.21 GY for mathjax
+
+future: true
