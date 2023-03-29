@@ -1,6 +1,6 @@
 ---
 published: True
-title:  "[MySQL] 우분투 MySQL 쓸때마다 까먹는 명령어들(실행, 접속, 비밀번호 재설정)"
+title:  "[MySQL, 우분투] 쓸때마다 까먹는 MySQL 명령어들(실행 / 접속 / 비밀번호 재설정)"
 categories: MySQL
 tag: [MySQL, ubuntu]
 ---
