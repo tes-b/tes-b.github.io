@@ -12,7 +12,7 @@ tag: [Programmers, MySQL, Database, SQL]
 
 ## 해답
 
-``` SQL
+```sql
 
 SELECT DISTINCT
 U.USER_ID, 

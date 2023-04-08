@@ -25,12 +25,12 @@ mysql -u root -p
 ```
 
 ### 사용자 암호 설정
-```
+```sql
 ALTER USER 'user-name'@'localhost' IDENTIFIED BY 'NEW_USER_PASSWORD';
 FLUSH PRIVILEGES;
 ```
 ```ALTER USER``` 작동하지 않는 경우
-```
+```sql
 UPDATE mysql.user SET authentication_string = PASSWORD('NEW_USER_PASSWORD')
 WHERE User = 'user-name' AND Host = 'localhost';
 FLUSH PRIVILEGES;
@@ -39,11 +39,11 @@ FLUSH PRIVILEGES;
 ## 데이터베이스, 사용자, 테이블
 
 ### 데이터베이스 생성
-```
+```sql
 CREATE DATABASE db_name default CHARACTER SET UTF8; 
 ```
 
-```
+```sql
 GRANT ALL PRIVILEGES ON db_name.* TO db_user@localhost IDENTIFIED BY 'user';
 EXIT;
 mysql -u db_user -p

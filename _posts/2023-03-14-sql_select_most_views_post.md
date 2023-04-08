@@ -11,7 +11,7 @@ tag: [Programmers, MySQL, Database, SQL]
 
 ## 해답
 
-``` SQL
+```sql
 SELECT CONCAT("/home/grep/src/", B.BOARD_ID, "/", F.FILE_ID, F.FILE_NAME, F.FILE_EXT) AS FILE_PATH
 FROM USED_GOODS_BOARD AS B
 JOIN USED_GOODS_FILE AS F 

@@ -11,7 +11,7 @@ tag: [Programmers, MySQL, Database, SQL]
 
 ## 해답
 
-``` SQL
+```sql
 SELECT * 
 FROM CAR_RENTAL_COMPANY_CAR
 WHERE OPTIONS LIKE '%네비게이션%'

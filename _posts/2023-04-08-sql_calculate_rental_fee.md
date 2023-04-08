@@ -11,7 +11,7 @@ tag: [Programmers, MySQL, Database, SQL]
 
 ## 해답
 
-``` SQL
+```sql
 SELECT car_id, car_type, fee
 FROM (SELECT c.car_id, c.car_type,
     FLOOR(daily_fee * 30 * (SELECT (100-discount_rate) * 0.01
@@ -36,7 +36,7 @@ ORDER BY fee DESC, car_type ASC, car_id DESC
 조건을 구하는 쿼리를 만든다음 조립하는 방식으로 풀었다.  
 
 1. 대여 불가능한 차량 id를 구하는 서브쿼리  
-```SQL
+```sql
 SELECT car_id
 FROM car_rental_company_rental_history
 WHERE (start_date <= '2022-11-30 00:00:00')

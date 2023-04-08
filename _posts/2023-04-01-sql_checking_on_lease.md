@@ -11,7 +11,7 @@ tag: [Programmers, MySQL, Database, SQL]
 
 ## 해답
 
-``` SQL
+```sql
 SELECT car_id, 
     MAX(CASE WHEN '2022-10-16 00:00:00' BETWEEN DATE(start_date) and DATE(end_date) 
         THEN '대여중'

@@ -11,7 +11,7 @@ tag: [Programmers, MySQL, Database, SQL]
 
 ## 해답
 
-``` SQL
+```sql
 SELECT BOARD_ID, WRITER_ID, TITLE, PRICE, 
 CASE WHEN (STATUS="SALE")       THEN "판매중"
      WHEN (STATUS="RESERVED")   THEN "예약중"
