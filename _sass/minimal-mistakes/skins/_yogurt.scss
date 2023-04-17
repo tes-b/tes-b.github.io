@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Yogurt skin
+   ========================================================================== */
+
+$doc-font-size: 14 !default;
+
+/* Colors */
+$text-color: #000 !default;
+$muted-text-color: $text-color !default;
+$primary-color: #11539e !default;
+$border-color: mix(#fff, $text-color, 75%) !default;
+$footer-background-color: #11539e !default;
+$link-color: #11999e !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+$background-color: #fff !default;
+$code-background-color: #d4d4d4 !default;
+$code-background-color-dark: #aaaaaa !default;
+$text-color: $primary-color !default;
+
+/* contrast syntax highlighting (base16) */
+$base00: #263238 !default;
+$base01: #2e3c43 !default;
+$base02: #314549 !default;
+$base03: #546e7a !default;
+$base04: #b2ccd6 !default;
+$base05: #eeffff !default;
+$base06: #eeffff !default;
+$base07: #ffffff !default;
+$base08: #f07178 !default;
+$base09: #f78c6c !default;
+$base0a: #ffcb6b !default;
+$base0b: #c3e88d !default;
+$base0c: #89ddff !default;
+$base0d: #82aaff !default;
+$base0e: #c792ea !default;
+$base0f: #ff5370 !default;
+
+$h-size-1: 1.25em !default; // ~25.008px
+$h-size-2: 1.125em !default; // ~20px
+$h-size-3: 1.06em !default; // ~18px
+$h-size-4: 1em !default; // ~17px
+$h-size-5: 1em !default; // ~16.5px
+$h-size-6: 1em !default; // ~16px
+
+.page__content {
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    color: $text-color;
+  }
+}
+
+.page__footer {
+  color: #fff !important; // override
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+/*
+Breakpoints
+========================================================================== */
+
+$small: 600px !default;
+$medium: 768px !default;
+$medium-wide: 900px !default;
+$large: 1280px !default;
+$x-large: 1280px !default;
+$max-width: $x-large !default;
+
+/*
+   Grid
+   ========================================================================== */
+
+$right-sidebar-width-narrow: 100px !default; // default 200px
+$right-sidebar-width: 270px !default;        // default 300px
+$right-sidebar-width-wide: 300px !default;   // default 400px // 22.08.08 GY
+
+/*
+   Other
+   ========================================================================== */
+
+$border-radius: 4px !default;
+$box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+$nav-height: 2em !default;
+$nav-toggle-height: 2rem !default;
+$navicon-width: 1.5rem !default;
+$navicon-height: 0.25rem !default;
+$global-transition: all 0.2s ease-in-out !default;
+$intro-transition: intro 0.3s both !default;
