@@ -1,7 +1,7 @@
 ---
 published: true
-title:  "VSCode에서 파일 비교하기"
-categories: Etc
+title:  "[VSCode] 파일 비교하기"
+categories: [VSCode]
 tag: [VSCdoe, compare]
 ---
 

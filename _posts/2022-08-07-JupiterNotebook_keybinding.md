@@ -1,8 +1,8 @@
 ---
 published: true
-title:  "VSCode 주피터노트북(Jupyter Notebook) 키 바인딩 - Run All,Run Above"
-categories: Etc
-tag: [VSCdoe, jupyter notebook, keybinding]
+title:  "[VSCode] 주피터노트북(Jupyter Notebook) 키 바인딩 - Run All,Run Above"
+categories: [VSCode, Jupyter]
+tag: [VSCdoe, jupyter-notebook]
 ---
 
 VSCode에서 주피터 노트북 확장을 사용할 때  

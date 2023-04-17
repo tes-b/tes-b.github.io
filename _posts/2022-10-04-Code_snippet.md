@@ -1,7 +1,7 @@
 ---
 published: True
-title:  "VSCode로 코드 스니펫(snippet) 관리하기"
-categories: Etc
+title:  "[VSCode] 코드 스니펫(snippet) 관리하기"
+categories: [VSCode]
 tag: [VSCode, snippet]
 ---
 

@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "VSCode로 블로그 포스팅하기."
-categories: Etc
+categories: [VSCode]
 tag: [VSCode, typora]
 ---
 

@@ -1,8 +1,8 @@
 ---
 published: True
-title:  "[AICodeHelper] VSCode 에 chatGPT 연동하기"
-categories: Etc
-tag: [chatGPT, VSCode]
+title:  "[AICodeHelper] VSCode에 chatGPT 연동하기"
+categories: [VSCode]
+tag: [chatGPT, VSCode, AICodeHelper]
 ---
 
 VSCode에 chatGPT를 연동해서 쓰는 익스텐션을 소개하려 한다.  
