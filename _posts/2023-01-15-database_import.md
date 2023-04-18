@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[MySQL] 데이터 베이스 내보내기(dump)/불러오기(import)"
-categories: Database
+categories: [MySQL]
 tag: [SQL, MySQL, RDBMS, Database]
 ---
 

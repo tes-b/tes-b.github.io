@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "mysqlclient 설치 오류 error: subprocess-exited-with-error"
-categories: Etc Database
+categories: [MySQL, Error]
 tag: [MySQL, ubuntu]
 ---
 

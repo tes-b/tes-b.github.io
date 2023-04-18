@@ -1,7 +1,7 @@
 ---
 published: True
-title:  "[MySQL, Ubuntu] 쓸때마다 까먹는 MySQL 명령어들(실행, 접속, 비밀번호 재설정)"
-categories: Database
+title:  "[MySQL, ubuntu] 쓸때마다 까먹는 MySQL 명령어들(실행, 접속, 비밀번호 재설정)"
+categories: [MySQL, ubuntu]
 tag: [MySQL, ubuntu]
 ---
 
