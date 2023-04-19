@@ -1,8 +1,8 @@
 ---
 published: false
-title:  "pdpbox 설치 에러와 해결 방법"
-categories: Etc
-tag: [VSCdoe, pdpbox, python]
+title:  "데이터 사이언스 용어 정리"
+categories: [datascience]
+tag: [datascience]
 ---
 
 

@@ -1,8 +1,8 @@
 ---
 published: True
-title:  "[Anaconda, pip] requirements 내보내기/불러오기"
-categories: Etc
-tag: [requirements, conda, pip, anaconda]
+title:  "[Anaconda, python] requirements 내보내기/불러오기"
+categories: [Anaconda, python]
+tag: [requirements, python, pip, anaconda]
 ---
 
 ## CONDA 환경

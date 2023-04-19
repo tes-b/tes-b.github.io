@@ -1,7 +1,7 @@
 ---
 published: true
-title:  "[matplotlib] figsize 조정이 안될 때"
-categories: Etc
+title:  "[matplotlib, python] figsize 조정이 안될 때"
+categories: [matplotlib, python]
 tag: [matplotlib, pandas, Numpy, python, data]
 ---
 
