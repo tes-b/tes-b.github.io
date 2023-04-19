@@ -1,8 +1,8 @@
 ---
 published: True
-title:  "[django, AWS] Django 어플리케이션 AWS EC2로 배포하기 (gunicorn, nginx)"
-categories: django AWS
-tag: [django, AWS, gunicorn, nginx, ubuntu]
+title:  "[Django, AWS] Django 어플리케이션 AWS EC2로 배포하기 (gunicorn, nginx)"
+categories: [Django, AWS]
+tag: [Django, AWS, gunicorn, nginx, ubuntu]
 ---
 
 이번에 django로 홈페이지를 제작하고 EC2를 사용해 배포했는데  
@@ -57,6 +57,15 @@ python3 -m venv venv
 ```
 source venv/bin/activate
 ```
+
+만약 ```DEBUG``` 옵션이 ```False```라면  
+실행시 기존의 ```static``` 파일을 읽지 못하는데  
+```
+python manage.py collectstatic
+```
+위 명령으로 스테틱 파일을 모아줘야 한다.   
+(아래에 좀더 자세히 써두었다.)
+
 ## 라이브러리 설치
 
 requirements.txt 있으면
@@ -101,16 +110,7 @@ EC2 보안그룹에서 8000 포트를 열지 않았으면 접속이 안된다.
 ![image1](/images/2023-04-15-aws_django_service_1.png)  
 
 이후 nginx를 사용하게되면 필요없어지니 접속 확인 후에는 다시 8000포트를 닫아도 상관이 없다.  
-  
-만약 ```DEBUG```옵션이 ```False```라면 ```static```파일들을 읽지 못하는데  
-```
-python manage.py collectstatic
-```
-위의 명령으로 스테틱 파일을 모아줘야 한다고 한다.   
-그런데 어차피 static 파일들은 nginx에서 처리를 해주기 때문에  
-안나와도 당장은 그냥 접속되는것을 확인만 하고 넘어가도 된다.  
 
-runserver로 배포하는 것은 보안과 성능면에서 좋지않다고 하니 개발용으로만 쓰자.  
 
 ## gunicorn 실행 테스트
 
@@ -236,9 +236,9 @@ Nginx가 ```/home/ubuntu/<프로젝트폴더>/static``` 디렉터리의 파일�
 sudo ln -s /etc/nginx/sites-available/<프로젝트이름> /etc/nginx/sites-enabled
 ```
 
-nginx를 다시시작 한다. 
+nginx를 시작 한다. 
 ```
-sudo systemctl restart nginx
+sudo systemctl start nginx
 ```
 
 ```서버 IP```로 접속해 확인해본다.  
@@ -301,9 +301,45 @@ ModuleNotFoundError: No module named 'conf.wsgi'
 점프투 장고를 처음부터 따라했다면 앱이름이 ```conf```여서 문제없이 실행됐겠지만  
 내경우는 페이지는 따로 만들고 배포과정만 따라하다가 이런 문제가 생겼었다.  
 
+### static 파일 404에러  
+
+개발시에는 ```DEBUG``` 세팅이 ```True```인 상태로 개발하지만     
+배포시에는 ```False```로 바꾸게 되는데 이대로 실행시 ```static``` 파일 경로를 읽지 못하고 404에러가 난다.  
+
+이때는 ```static```파일을 모아줘야 한다.  
+
+
+먼저 ```settings.py``` 파일에서 ```STATIC_ROOT``` 경로를 정해준다.  
+예시는 ```.static_root``` 경로로 정했지만 달라지거나 숨김폴더가 아니어도 상관없다.  
+
+```py
+# settings.py
+
+import os
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = os.path.dirname(BASE_DIR)
+
+# static files
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join('static/'),)
+STATIC_ROOT = os.path.join(BASE_DIR, '.static_root')
+```
+
+그 다음 아래 명령어를 사용한다.  
+```
+python manage.py collectstatic
+```
+
+이 작업은 ```static``` 파일의 변동이 있으면 다시 해줘야 한다.  
+
 
 
 ## 참고  
 점프 투 장고 <https://wikidocs.net/book/4223>  
 Django 자습 <https://wikidocs.net/book/837>  
-mysqlclient  설치 에러  <https://iamiet.tistory.com/54>
+[Django] Ubuntu 18.04 에서 mysqlclient 설치오류 해결방법  
+<https://iamiet.tistory.com/54>  
+[Deploy] Django 프로젝트 배포하기 - 4. Static 파일  
+<https://nachwon.github.io/django-deploy-4-static/>  
