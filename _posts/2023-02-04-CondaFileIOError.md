@@ -1,8 +1,8 @@
 ---
 published: True
 title:  "[miniconda] CondaFileIOError: '/home/ubuntu/bin/miniconda3/pkgs/envs/*/env.txt'. [Errno 2] No such file or directory: '/home/ubuntu/bin/miniconda3/pkgs/envs/*/env.txt'"
-categories: Etc
-tag: [anaconda, miniconda, ubuntu, error]
+categories: [Anaconda, Error]
+tag: [Anaconda, miniconda, ubuntu, Error]
 ---
 
 ## 미니콘다 설치 에러  

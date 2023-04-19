@@ -2,7 +2,7 @@
 published: True
 title:  "[Anaconda, python] requirements 내보내기/불러오기"
 categories: [Anaconda, python]
-tag: [requirements, python, pip, anaconda]
+tag: [requirements, python, pip, Anaconda]
 ---
 
 ## CONDA 환경
