@@ -1,8 +1,8 @@
 ---
 published: false
 title:  "데이터 사이언스 용어 정리"
-categories: [datascience]
-tag: [datascience]
+categories: [DataScience]
+tag: [DataScience]
 ---
 
 

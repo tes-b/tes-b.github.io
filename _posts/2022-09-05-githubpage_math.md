@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "깃허브 블로그에 수식 쓰기 - miniaml-mistakes"
-categories: Etc
+categories: [github]
 tag: [github, math, minimal-mistakes]
 ---
 

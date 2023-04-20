@@ -1,8 +1,8 @@
 ---
 published: true
 title:  "정형 데이터의 종류"
-categories: [datascience]
-tag: [datascience, statistics]
+categories: [DataScience]
+tag: [DataScience, statistics]
 ---
 
 "데이터과학을 위한 통계" 책을 읽고 있다.  

@@ -1,8 +1,8 @@
 ---
 published: True
 title:  "[Django] iframe 127.0.0.1 refused to connect"
-categories: Django
-tag: [django, error]
+categories: [Django]
+tag: [Django, error]
 ---
 
 ## 문제

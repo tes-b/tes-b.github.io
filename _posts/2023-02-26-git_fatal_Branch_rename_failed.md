@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[git] fatal: Branch rename failed"
-categories: git
+categories: [git, github]
 tag: [git, github]
 ---
 

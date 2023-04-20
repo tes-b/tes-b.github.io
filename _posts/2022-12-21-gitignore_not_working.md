@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[git] .gitignore 동작하지 않을 때"
-categories: git
+categories: [git]
 tag: [git, gitignore]
 ---
 

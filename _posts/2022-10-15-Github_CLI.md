@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "Github Cli 사용하기 (pull request)"
-categories: Etc
+categories: [Github]
 tag: [GitHub, GitHub CLI, fork, pull request]
 ---
 

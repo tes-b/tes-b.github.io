@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Django] 장고 restframework api 테스트 사용법"
-categories: Django
+categories: [Django]
 tag: [django, unittest, python, restframework, drf]
 ---
 

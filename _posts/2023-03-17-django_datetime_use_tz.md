@@ -1,8 +1,8 @@
 ---
 published: True
 title:  "[Django] model DateTimeField 한국 시간 설정"
-categories: Etc
-tag: [django, model, datetime]
+categories: [Django]
+tag: [Django, model, datetime]
 ---
 
 <https://programmers-sosin.tistory.com/entry/Django-model-DateTimeField-%ED%95%9C%EA%B5%AD-%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0>
