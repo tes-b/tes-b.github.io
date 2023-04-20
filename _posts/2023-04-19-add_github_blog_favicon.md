@@ -1,6 +1,6 @@
 ---
 published: true
-title:  "깃허브 블로그에 favicon 넣기 (minimal mistakes, realfavicongenerator 사용안함)"
+title:  "깃허브 블로그에 favicon 넣기 (minimal mistakes)"
 categories: [Etc, github]
 tag: [github, minimal-mistakes, favicon]
 ---
