@@ -1,8 +1,8 @@
 ---
 published: False
-title:  "[JS] 왕초보 워들(wordle) 만들기"
-categories: JS
-tag: [JS]
+title:  "[JavaScript] 왕초보 워들(wordle) 만들기"
+categories: [JavaScript]
+tag: [JavaScript]
 ---
 
 

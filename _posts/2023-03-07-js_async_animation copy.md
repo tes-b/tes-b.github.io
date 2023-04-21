@@ -1,8 +1,8 @@
 ---
 published: True
-title:  "[JS] 애니메이션 끝날 때 기다리기 - 비동기 프로그래밍"
-categories: JS
-tag: [JS, Promise, async]
+title:  "[JavaScript] 애니메이션 끝날 때 기다리기 - 비동기 프로그래밍"
+categories: [JavaScript]
+tag: [JavaScript, Promise, async]
 ---
 
 ## 문제

@@ -1,8 +1,8 @@
 ---
 published: True
-title:  "[javascript] 기본 자료형(number,string,boolean) 포인터 전달하기"
-categories: javascript
-tag: [javascript]
+title:  "[JavaScript] 기본 자료형(number,string,boolean) 포인터 전달하기"
+categories: [JavaScript]
+tag: [JavaScript]
 ---
 
 

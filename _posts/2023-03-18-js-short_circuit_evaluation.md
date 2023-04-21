@@ -1,8 +1,8 @@
 ---
 published: true
-title:  "[JS] 논리연산자(&&) 단축평가"
-categories: JS
-tag: [JS]
+title:  "[JavaScript] 논리연산자(&&) 단축평가"
+categories: [JavaScript]
+tag: [JavaScript]
 ---
 
 자바스크립트에서 논리연산자 ||, && 는 왼쪽부터 오른쪽으로 평가를 진행하는데,  
