@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Programmers, Python3, Lv.2] 리코쳇 로봇"
-categories: CodingTests
+categories: [Programmers, python]
 tag: [Programmers, Python3, Database]
 ---
 

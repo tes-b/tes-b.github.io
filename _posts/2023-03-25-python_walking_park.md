@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Programmers, Python3, Lv.1] 공원 산책"
-categories: CodingTests
+categories: [Programmers, python]
 tag: [Programmers, Python3, Database]
 ---
 
