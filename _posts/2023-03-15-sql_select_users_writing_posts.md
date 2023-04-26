@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Programmers, MySQL, Lv.3] 조건에 맞는 사용자 정보 조회하기"
-categories: CodingTests
+categories: [Programmers, MySQL]
 tag: [Programmers, MySQL, Database, SQL]
 ---
 

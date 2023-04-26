@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Programmers, MySQL, Lv.1] 조건에 부합하는 중고거래 댓글 조회하기"
-categories: CodingTests
+categories: [Programmers, MySQL]
 tag: [Programmers, MySQL, Database, SQL]
 ---
 

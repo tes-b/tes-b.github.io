@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Programmers, MySQL, Lv.1] 특정 옵션이 포함된 자동차 리스트 구하기"
-categories: CodingTests
+categories: [Programmers, MySQL]
 tag: [Programmers, MySQL, Database, SQL]
 ---
 

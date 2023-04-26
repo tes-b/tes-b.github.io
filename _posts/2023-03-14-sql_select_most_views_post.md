@@ -1,7 +1,7 @@
 ---
 published: True
 title:  "[Programmers, MySQL, Lv.3] 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기"
-categories: CodingTests
+categories: [Programmers, MySQL]
 tag: [Programmers, MySQL, Database, SQL]
 ---
 
