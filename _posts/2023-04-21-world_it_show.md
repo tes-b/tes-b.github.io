@@ -1,7 +1,7 @@
 ---
 published: true
 title:  "[World IT Show] 월드 IT 쇼 2023 관람 후기"
-categories: [Etc, Dairy]
+categories: [Etc, Diary]
 tag: [World-IT-Show]
 ---
 
