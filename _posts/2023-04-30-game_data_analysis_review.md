@@ -7,6 +7,8 @@ tag: [Book]
 
 ## 게임 데이터 분석
 
+![Image0](/images/2023-04-30-game_data_analysis_review.jpg){: width="50%" height="50%"}      
+
 쿠파트 티보 지음 / 박기성 옮김  
 2014년에 나온 오래된 책이다.  
 
