@@ -34,13 +34,13 @@ sudo apt install terminator
 
 ![image0](/images/2023-05-11-terminator_terminal_layout_1.png)  
 왼쪽 상단 아이콘 클릭 후 ```Broadcast all``` 선택  
-해체하려면 ```Broadcast off``` 선택
+해제 하려면 ```Broadcast off``` 선택
 
 ### 레이아웃 저장
 
 현재 레이아웃을 저장하고 싶으면   
-우클릭 >> ```Preferences``` >> ```Layout``` 에 들어간 뒤
-```add```를 누르면 현재의 레이아웃이 추가되고 ```save```를 눌러 저장하면 된다. 
+우클릭 >> ```Preferences``` >> ```Layout``` 에 들어간 뒤  
+```add```를 누르면 현재의 레이아웃이 추가되고 ```save```로 저장하면 된다. 
 ![image0](/images/2023-05-11-terminator_terminal_layout_2.png) 
 
 
