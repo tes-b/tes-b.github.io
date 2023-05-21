@@ -1,5 +1,5 @@
 ---
-published: false 
+published: true 
 title:  "[AWS, Jupyter] EC2에 주피터 노트북 실행 및 pyspark로 HDFS에서 파일 불러오기"
 categories: [hadoop, spark, AWS, Jupyter]
 tag: [hadoop, spark, AWS, EC2, Jupyter]
