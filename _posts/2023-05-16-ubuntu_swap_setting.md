@@ -1,8 +1,8 @@
 ---
 published: true
 title:  "[ubuntu] 우분투 스왑(swap) 메모리 설정. 메모리 부족 해결"
-categories: [ubuntu, error]
-tag: [ubuntu, error]
+categories: [ubuntu, Error]
+tag: [ubuntu, Error]
 ---
 
 ## 메모리 부족
