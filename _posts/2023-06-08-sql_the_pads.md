@@ -52,11 +52,9 @@ ORDER BY list
 쿼리에서 정렬을 했더라도 ```UNION```을 이용하면 정렬이 깨지기 때문에  
 마지막에 정렬을 다시 해줘야 한다.
 
-
 1. 첫번째 쿼리는 ```CONCAT```으로 ```name```과  ```occupation```을 조건에 맞게 붙여준다.  
 ```LEFT```를 사용해서 ```occupation```의 첫글자만 뽑아내면 된다.  
 컬럼이름을 붙여서 두번째 쿼리와 컬럼 이름을 통일시킨다.  
-
 ```sql
 (SELECT CONCAT(name,"(",LEFT(occupation,1),")") AS list
 FROM occupations 
