@@ -1,6 +1,6 @@
 ---
 published: True
-title:  "깃허브 블로그 카테고리 만들기 초단한 방법 (minimal mistakes)"
+title:  "깃허브 블로그 카테고리 만들기 초간단 방법 (minimal mistakes)"
 categories: [Etc]
 tag: [Etc, minimal-mistakes]
 ---
