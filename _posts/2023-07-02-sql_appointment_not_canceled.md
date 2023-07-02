@@ -31,7 +31,6 @@ appointment 테이블에서 조건에 맞는 예약만 뽑은 후
 나머지 항목은 테이블 조인으로 채워넣으면 된다. 
 
 1. 먼저 ```appointment```테이블에서 조건에 맞는 항목을 뽑는다.  
-
 ```sql
 SELECT *
 FROM appointment AS a
