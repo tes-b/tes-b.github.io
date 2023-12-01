@@ -5,8 +5,6 @@ categories: [git, github]
 tag: [git, github]
 ---
 
-
-
 ## 문제 
 깃허브 레포지토리를 클론 하려는데 다음과 같은 에러가 발생했다.  
 
