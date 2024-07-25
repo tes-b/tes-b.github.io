@@ -1,6 +1,6 @@
 ---
 published: True
-title:  "[Anaconda] 특정 컬럼이 포함된 테이블 찾기"
+title:  "[Anaconda] CondaSSLError: Encountered an SSL error."
 categories: [Anaconda]
 tag: [Anaconda, python, Error]
 ---
